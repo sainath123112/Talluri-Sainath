@@ -1,0 +1,66 @@
+.skills
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 6em;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffffe;
+    overflow-x: hidden;
+
+}
+.skills h1
+{
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: .15em;
+    color: #0f0e17;
+}
+
+.skills p
+{
+    font-size: 1em;
+    padding: .5em;
+    letter-spacing: 3px;
+    color: #2e2f3e;
+}
+
+.skill-container 
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    z-index: 10;
+}
+
+.skill-row
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.skill-row .skill-row-child
+{
+    padding: 20px;
+    background-color: #0f0e17;
+    margin: 10px 20px;
+    flex: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skill-row .skill-row-child h2 
+{
+    color: #fffffe;
+    padding: 10px;
+}
+.skill-row .skill-row-child h2 i
+{
+    margin-right: 10px;
+}
+.skill-row .skill-row-child div p {
+    color: #a7a9be;
+    padding: 10px;
+    font-weight: bold;
+}
+

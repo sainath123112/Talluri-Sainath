@@ -1,0 +1,56 @@
+.react-logo 
+{
+    position: fixed;
+    font-size: 10em;
+    opacity: 0.3;
+    top: 3em;
+    left: -.5em;
+ 
+    
+}
+.html-logo 
+{
+    position: fixed;
+    font-size: 10em;
+    opacity: 0.2;
+    top: 1em;
+    right: .2em;
+    transform: rotate(30deg);
+    
+}
+.css-logo 
+{
+    position: fixed;
+    font-size: 10em;
+    opacity: 0.2;
+    top: 0em;
+    left: 1em;
+    transform: rotate(-30deg);
+    
+    
+}
+
+.js-logo 
+{
+    position: fixed;
+    font-size: 10em;
+    opacity: 0.1;
+    right: 4.5em;
+    bottom: 3em;
+    transform: rotate(-45deg);
+    
+    
+}
+
+.github-logo 
+{
+    position: fixed;
+    font-size: 10em;
+    opacity: 0.3;
+    right: 3em;
+    bottom: -.25em;
+    transform: rotate(45deg);
+    
+}
+
+

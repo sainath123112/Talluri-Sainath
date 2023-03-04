@@ -1,0 +1,110 @@
+.navbar
+{
+    background-color: #0f0e17;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    overflow:visible;
+}
+.navbar img
+{
+    height: 40px;
+    position: fixed;
+    margin: 10px;
+    top: 0;
+    left: 250px;
+    
+}
+.navbar-links
+{
+    margin: 1.5em;
+    overflow:visible;
+}
+.navbar-links a {
+    position: relative;
+    text-decoration: none;
+    color: #fffffe;
+    margin: 20px;
+    padding: 5px;
+    font-size: 1.25em;
+    opacity: 0.8;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.navbar-links a::after
+{
+    content: " ";
+    width: 100%;
+    height: .1em;
+    background-color: #ff8906;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: .25em;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+
+}
+.navbar-links a:hover
+{
+    opacity: 1;
+    
+}
+.navbar-links a:hover::after
+{
+    transform: scale(1);
+}
+
+
+.navbar-resume 
+{
+    position: fixed;
+    right: 30px;
+}
+.navbar-resume button
+{
+    display: flex;
+    justify-content: center;
+    background-color: #ff8906;
+    color: #fffffe;
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    animation-name: bounce_btn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    font-family: "Nanum Gothic Coding", sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border: none;
+}
+.navbar-resume button i {
+    margin-right: 10px;
+}
+
+.navbar-resume button:hover
+{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@keyframes bounce_btn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
