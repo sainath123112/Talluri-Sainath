@@ -16,11 +16,11 @@ function App() {
       <BrowserRouter>
       <Navbar></Navbar>
       <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/skills" element={<Skills></Skills>}></Route>
-        <Route path="/projects" element={<Projects></Projects>}></Route>
-        <Route path="/experience" element={<Experience></Experience>}></Route>
-        <Route path="/contact" element={<Contact></Contact>}></Route>
+        <Route path="/Talluri-Sainath" element={<Home></Home>}></Route>
+        <Route path="/Talluri-Sainath/skills" element={<Skills></Skills>}></Route>
+        <Route path="/Talluri-Sainath/projects" element={<Projects></Projects>}></Route>
+        <Route path="/Talluri-Sainath/experience" element={<Experience></Experience>}></Route>
+        <Route path="/Talluri-Sainath/contact" element={<Contact></Contact>}></Route>
         <Route path="*" element={<h2>Page Not Found</h2>}></Route>
       </Routes>
       </BrowserRouter>
