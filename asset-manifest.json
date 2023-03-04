@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Talluri-Sainath/static/css/main.bc854408.css",
-    "main.js": "/Talluri-Sainath/static/js/main.9d9fc5c6.js",
+    "main.js": "/Talluri-Sainath/static/js/main.101c3aac.js",
     "index.html": "/Talluri-Sainath/index.html",
     "main.bc854408.css.map": "/Talluri-Sainath/static/css/main.bc854408.css.map",
-    "main.9d9fc5c6.js.map": "/Talluri-Sainath/static/js/main.9d9fc5c6.js.map"
+    "main.101c3aac.js.map": "/Talluri-Sainath/static/js/main.101c3aac.js.map"
   },
   "entrypoints": [
     "static/css/main.bc854408.css",
-    "static/js/main.9d9fc5c6.js"
+    "static/js/main.101c3aac.js"
   ]
 }
