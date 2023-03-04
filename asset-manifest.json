@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Talluri-Sainath/static/css/main.bc854408.css",
+    "main.js": "/Talluri-Sainath/static/js/main.9d9fc5c6.js",
+    "index.html": "/Talluri-Sainath/index.html",
+    "main.bc854408.css.map": "/Talluri-Sainath/static/css/main.bc854408.css.map",
+    "main.9d9fc5c6.js.map": "/Talluri-Sainath/static/js/main.9d9fc5c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc854408.css",
+    "static/js/main.9d9fc5c6.js"
+  ]
+}
