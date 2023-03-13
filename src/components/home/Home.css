@@ -36,8 +36,8 @@
 {
     font-size: 3em;
     color: #f25f4c;
-    padding: 5px;
     letter-spacing: 3px;
+    font-weight: bold;
     
 }
 .home-role 
@@ -46,8 +46,8 @@
     flex-direction: row;
     font-size: 2em;
     color: #a7a9be;
-    padding: 5px;
     letter-spacing:2px;
+    align-items: center;
 }
 .home-role i
 {
