@@ -33,7 +33,7 @@
     margin: 20px;
     padding: 5px;
     font-size: 1.25em;
-    opacity: 0.8;
+    opacity: 1;
     letter-spacing: 3px;
     font-weight: bolder;
     text-transform: uppercase;
@@ -57,7 +57,18 @@
 .navbar-links a:hover
 {
     opacity: 1;
+    color: #ff8906;
     
+}
+.navbar-links a:focus 
+{
+    color: #ff8906;
+    
+
+}
+.navbar-links a:focus::after
+{
+    transform: scale(1);
 }
 .navbar-links a:hover::after
 {
@@ -70,31 +81,32 @@
     position: fixed;
     right: 30px;
 }
-.navbar-resume button
+.navbar-resume a
 {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #ff8906;
     color: #fffffe;
-    padding: 10px 20px;
+    padding: 6px 16px;
     margin: 20px;
     font-size: 20px;
     border-radius: 10px;
     transition: all 0.2s ease;
     animation-name: bounce_btn;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    font-family: "Nanum Gothic Coding", sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: bold;
     border: none;
 }
-.navbar-resume button i {
+.navbar-resume a i {
     margin-right: 10px;
+
 }
 
-.navbar-resume button:hover
+.navbar-resume a:hover
 {
     cursor: pointer;
     opacity: 0.8;

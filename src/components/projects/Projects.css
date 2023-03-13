@@ -1,10 +1,73 @@
-.projects
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.project-list li
 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #0f0e17;
-    color: white;
+    @apply px-2 py-1 text-[.5rem] bg-[#e53170] text-[#fffffe] mx-1 rounded-md opacity-[0.8]
+} 
+
+.projects {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 6em;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  background-color: #0f0e17;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+  z-index: 10;
+}
+.project-item {
+  width: 350px;
+  height: auto;
+  background-color: #fffffe;
+  margin: 1em;
+  box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.2),
+    0 6px 20px 0 rgba(157, 154, 154, 0.19);
+}
+
+.project-list {
+  font-size: 0.75em;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 0.25rem;
+}
+
+.project-item h2 {
+  text-align: center;
+}
+.project-item-buttons a {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 6px 12px;
+  font-size: 1em;
+  background-color: #ff8906;
+  color: #fffffe;
+  margin: 10px;
+  border-radius: 5px;
+  transition: all 0.25s linear;
+  text-decoration: none;
+}
+.project-item-buttons {
+  text-align: center;
+}
+
+.project-item-buttons a:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }

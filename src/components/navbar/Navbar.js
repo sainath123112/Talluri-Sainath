@@ -1,10 +1,13 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import logoTs from "./images/logo_ts.png"
 
 function Navbar() {
+
+
     return(
         <div className="navbar">
-            <Link to="/"><img src="\logo_ts.png" alt="logo"></img></Link>
+            <img src={logoTs} alt="logo"></img>
             <div className="navbar-links">
                 <Link to="/Talluri-Sainath">Home</Link>
                 <Link to="/Talluri-Sainath/skills">Skills</Link>
@@ -13,7 +16,7 @@ function Navbar() {
                 <Link to="/Talluri-Sainath/contact">Contact</Link>
             </div>
             <div className="navbar-resume">
-                <button><i className="fa-solid fa-download"></i>Resume</button>
+                <a href="#resume"><i className="fa-solid fa-download"></i>Resume</a>
             </div>
         </div>
     );
