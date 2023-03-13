@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/Talluri-Sainath/static/css/main.bc854408.css",
-    "main.js": "/Talluri-Sainath/static/js/main.101c3aac.js",
+    "main.css": "/Talluri-Sainath/static/css/main.4149f443.css",
+    "main.js": "/Talluri-Sainath/static/js/main.01c0432b.js",
+    "static/media/foodorderapp.mp4": "/Talluri-Sainath/static/media/foodorderapp.95c98afc5a49e85461e5.mp4",
+    "static/media/todo_app.mp4": "/Talluri-Sainath/static/media/todo_app.dd93ca0845f81e327ce4.mp4",
+    "static/media/quote_generator.mp4": "/Talluri-Sainath/static/media/quote_generator.710ed36956cfedeaa065.mp4",
+    "static/media/logo_ts.png": "/Talluri-Sainath/static/media/logo_ts.ed472ce7066b1ee63182.png",
     "index.html": "/Talluri-Sainath/index.html",
-    "main.bc854408.css.map": "/Talluri-Sainath/static/css/main.bc854408.css.map",
-    "main.101c3aac.js.map": "/Talluri-Sainath/static/js/main.101c3aac.js.map"
+    "main.4149f443.css.map": "/Talluri-Sainath/static/css/main.4149f443.css.map",
+    "main.01c0432b.js.map": "/Talluri-Sainath/static/js/main.01c0432b.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc854408.css",
-    "static/js/main.101c3aac.js"
+    "static/css/main.4149f443.css",
+    "static/js/main.01c0432b.js"
   ]
 }
