@@ -1,0 +1,34 @@
+.contact-links
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+    bottom: 0;
+    right: 0;
+}
+.contact-links a
+{
+    text-decoration: none;
+    color: #a7a9be;
+    padding: 15px 10px;
+    font-size: 1em;
+    transform: scale(1);
+    transition: all 0.25s linear;
+}
+.contact-links span
+{
+    height: 150px;
+    width: 2px;
+    background-color: #a7a9be;
+    border-radius: 5px;
+
+
+}
+.contact-links a:hover
+{
+    transform: scale(1.3);
+
+}

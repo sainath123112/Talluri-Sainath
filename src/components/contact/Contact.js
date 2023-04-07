@@ -2,6 +2,8 @@ import "./Contact.css";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Logos from "../logos/Logos.js";
+import ContactLinks from "../contact-links/ContactLinks";
+
 function Contact({setcomponentpath})
 {
     const [to, setTo] = useState('');
@@ -28,6 +30,8 @@ function Contact({setcomponentpath})
                     <button type="submit" >Send</button>
                 </form>
             </div>
+
+            <ContactLinks></ContactLinks>
             <Logos color="#e53170"></Logos>
         </div>
     );

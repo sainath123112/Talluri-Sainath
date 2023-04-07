@@ -2,7 +2,9 @@ import "./Experience.css";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Logos from "../logos/Logos";
-function Experience({setcomponentpath, componentpath})
+import ContactLinks from "../contact-links/ContactLinks";
+
+function Experience({setcomponentpath})
 {
 
     const location = useLocation();
@@ -42,6 +44,8 @@ function Experience({setcomponentpath, componentpath})
                             libraries like Redux and react hooks.</li>
                 </ul>
             </div>
+
+            <ContactLinks></ContactLinks>
             <Logos color="#f25f4c"></Logos>
         </div>
     );

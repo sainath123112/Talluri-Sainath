@@ -2,6 +2,7 @@ import "./Home.css";
 import { useLocation } from "react-router-dom";
 import Logos from "../logos/Logos";
 import { useEffect } from "react";
+import ContactLinks from "../contact-links/ContactLinks";
 
 function Home({setcomponentpath, componentpath}) {
     const location = useLocation();
@@ -20,13 +21,7 @@ function Home({setcomponentpath, componentpath}) {
                 <h1 className="home-name">Talluri Sainath</h1>
                 <p className="home-role"><i className="fa-solid fa-less-than"></i>Web Developer<i className="fa-solid fa-greater-than"></i></p>
              
-                <div className="contact-links">
-                    <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i className="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i className="fa-solid fa-envelope"></i></a>
-                    <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i className="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://github.com/sainath123112" target="__blank"><i className="fa-brands fa-github"></i></a>
-                    <span></span>
-                </div>
+                <ContactLinks></ContactLinks>
             </div>
             <Logos color="#a7a9be"></Logos>
         </div>

@@ -2,6 +2,7 @@ import "./Skills.css";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Logos from "../logos/Logos";
+import ContactLinks from "../contact-links/ContactLinks";
 
 
 function Skills({setcomponentpath, componentpath})
@@ -94,6 +95,7 @@ function Skills({setcomponentpath, componentpath})
             </div>
 
         </div>
+        <ContactLinks></ContactLinks>
         <Logos color="#f25f4c"></Logos>
         </div>
         

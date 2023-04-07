@@ -6,6 +6,7 @@ import Todoapp from "./images/todo_app.mp4";
 import Quotegenerator from "./images/quote_generator.mp4";
 import FoodOrderApp from "./images/foodorderapp.mp4";
 import MultiApiApp from "./images/multi_api_app.mp4";
+import ContactLinks from "../contact-links/ContactLinks";
 
 function Projects({setcomponentpath, componentpath})
 {
@@ -124,6 +125,8 @@ function Projects({setcomponentpath, componentpath})
         <div className="project-item"></div>
         <div className="project-item"></div>
       </div>
+
+      <ContactLinks></ContactLinks>
       <Logos color="#ff8906"></Logos>
     </div>
   );
