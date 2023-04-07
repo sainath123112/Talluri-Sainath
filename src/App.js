@@ -19,7 +19,7 @@ const [componentpath, setcomponentpath] = useState("");
       <BrowserRouter>
       <Navbar componentpath={componentpath} setcomponentpath={setcomponentpath}></Navbar>
       <Routes>
-        <Route path="/Talluri-Sainath" element={<Home componentpath={componentpath} setcomponentpath={setcomponentpath}></Home>}></Route>
+        <Route path="/Talluri-Sainath/" element={<Home componentpath={componentpath} setcomponentpath={setcomponentpath}></Home>}></Route>
         <Route path="/Talluri-Sainath/skills" element={<Skills componentpath={componentpath} setcomponentpath={setcomponentpath}></Skills>}></Route>
         <Route path="/Talluri-Sainath/projects" element={<Projects componentpath={componentpath} setcomponentpath={setcomponentpath}></Projects>}></Route>
         <Route path="/Talluri-Sainath/experience" element={<Experience componentpath={componentpath} setcomponentpath={setcomponentpath}></Experience>}></Route>

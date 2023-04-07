@@ -10,7 +10,7 @@ function Navbar({ componentpath }) {
         <div className="navbar">
             <img src={logoTs} alt="logo"></img>
             <div className="navbar-links">
-                <Link to="/Talluri-Sainath" className={componentpath==="/Talluri-Sainath" ? "navbar-links-clicked":"navbar-links-unclicked"}>Home</Link>
+                <Link to="/Talluri-Sainath/" className={componentpath==="/Talluri-Sainath/" ? "navbar-links-clicked":"navbar-links-unclicked"}>Home</Link>
                 <Link to="/Talluri-Sainath/skills" className={componentpath==="/Talluri-Sainath/skills" ? "navbar-links-clicked":"navbar-links-unclicked"}>Skills</Link>
                 <Link to="/Talluri-Sainath/projects" className={componentpath==="/Talluri-Sainath/projects" ? "navbar-links-clicked":"navbar-links-unclicked"}>Projects</Link>
                 <Link to="/Talluri-Sainath/experience" className={componentpath==="/Talluri-Sainath/experience" ? "navbar-links-clicked":"navbar-links-unclicked"}>Experience</Link>
