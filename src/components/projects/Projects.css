@@ -19,7 +19,13 @@
   overflow-x: hidden;
   background-color: #0f0e17;
 }
-
+.projects h1{
+  text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: .15em;
+    color: #fffffe;
+    font-weight: bold;
+}
 .project-container {
   display: flex;
   flex-direction: row;

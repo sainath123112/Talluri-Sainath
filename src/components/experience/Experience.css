@@ -4,6 +4,186 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #fffffe;
+    padding-top: 100px;
 }
+
+.experience h1 
+{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: .15em;
+    color: #0f0e17;
+    font-weight: bold;
+}
+.experience-stem
+{
+    width: 5px;
+    height: 70vh;
+    background-color: #0f0e17;
+    z-index: 1;
+    position: fixed;
+    align-self: flex-end;
+    border-radius: 10px 10px 0 0;
+}
+
+.experience-dot-one
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0f0e17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 51%;
+    z-index: 1;
+}
+.experience-dot-two
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0f0e17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 71%;
+    z-index: 1;
+}
+
+.experience-dot-small
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f25f4c;
+    opacity: 0.9;
+}
+
+.experience-1
+{
+    width: 500px;
+    height: 320px;
+    background-color: #0f0e17;
+    z-index: 1;
+    position: fixed;
+    top: 29%;
+    left: 13%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.experience-1-head
+{
+    color: #fffffe;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+.experience-1-company
+{
+    color: #a7a9be;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.experience-1-location
+{
+    color: #a7a9be;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+.experience-1-time
+{
+    color: #a7a9be;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+
+}
+.experience-1-time span
+{
+    background-color: #a7a9be;
+    color: #0f0e17;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.experience-1 ul
+{
+    padding: 10px;
+    list-style: disc inside;
+    font-size: 14px;
+
+}
+.experience-1 ul li
+{
+    color: #a7a9be;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    z-index: 1;
+    text-align: justify;
+
+}
+
+.experience-1::after
+{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #0f0e17;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%)  rotate(50deg);
+    z-index: -1;
+}
+
+.experience-2
+{
+    width: 500px;
+    height: 320px;
+    background-color: #0f0e17;
+    z-index: 1;
+    position: fixed;
+    top: 49%;
+    right: 13%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.experience-2 ul
+{
+    padding: 10px;
+    list-style: disc inside;
+    font-size: 14px;
+
+}
+.experience-2 ul li
+{
+    color: #a7a9be;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    z-index: 1;
+    text-align: justify;
+
+}
+.experience-2::after
+{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #0f0e17;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%)  rotate(-50deg);
+    z-index: -1;
+}
+

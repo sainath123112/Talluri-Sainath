@@ -7,18 +7,16 @@
     left: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 20;
     overflow:visible;
 }
 .navbar img
 {
-    height: 40px;
-    position: fixed;
-    margin: 10px;
-    top: 0;
-    left: 250px;
+    height: 50px;
+    margin-left: 150px;
+  
     
 }
 .navbar-links
@@ -29,7 +27,7 @@
 .navbar-links a {
     position: relative;
     text-decoration: none;
-    color: #fffffe;
+    
     margin: 20px;
     padding: 5px;
     font-size: 1.25em;
@@ -50,7 +48,6 @@
     left: 0;
     margin-top: .25em;
     border-radius: 5px;
-    transform: scale(0);
     transition: all 0.3s ease-in-out;
 
 }
@@ -60,27 +57,29 @@
     color: #ff8906;
     
 }
-.navbar-links a:focus 
+.navbar-links-unclicked
+{
+    color: #fffffe;
+}
+.navbar-links-clicked
 {
     color: #ff8906;
-    
-
 }
-.navbar-links a:focus::after
+.navbar-links-clicked::after
 {
     transform: scale(1);
 }
+.navbar-links-unclicked::after
+{
+    transform: scale(0);
+}
+
+
 .navbar-links a:hover::after
 {
     transform: scale(1);
 }
 
-
-.navbar-resume 
-{
-    position: fixed;
-    right: 30px;
-}
 .navbar-resume a
 {
     display: flex;
@@ -88,9 +87,9 @@
     align-items: center;
     background-color: #ff8906;
     color: #fffffe;
-    padding: 6px 16px;
+    padding: 6px 12px;
     margin: 20px;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 10px;
     transition: all 0.2s ease;
     animation-name: bounce_btn;

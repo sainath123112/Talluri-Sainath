@@ -3,5 +3,91 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    padding: 6em;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
     background-color: #0f0e17;
+    overflow-y: hidden;
+    
+}
+
+.contact h1{
+    text-transform: uppercase;
+      font-size: 2.5em;
+      letter-spacing: .15em;
+      color: #fffffe;
+      font-weight: bold;
+  }
+
+.contact p
+{
+    font-size: 1em;
+    letter-spacing: 3px;
+    color: #a7a9be;
+}
+
+.contact-form 
+{
+    z-index: 10;
+}
+.contact-form form
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    
+
+
+}
+.contact-form form div input
+{
+    width: 350px;
+    margin-left: 10px;
+    background-color: #a7a9be;
+    color: black;
+    letter-spacing: 2px;
+    
+}
+.contact-form form input
+{
+    padding: 10px;
+    width: 710px;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    letter-spacing: 2px;
+    background-color: #a7a9be;
+}
+.contact-form form div input::placeholder,  .contact-form form input::placeholder, .contact-form form textarea::placeholder
+{
+    color: black;
+    letter-spacing: 2px;
+}
+
+
+.contact-form form textarea
+{
+    padding: 10px;
+    width: 710px;
+    height: 180px;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    background-color: #a7a9be;
+}
+
+.contact-form form button
+{
+    background-color: #e53170;
+    margin-top: 50px;
+    font-size: 24px;
+    color: #fffffe;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 6px 24px;
+    border-radius: 5px;
 }

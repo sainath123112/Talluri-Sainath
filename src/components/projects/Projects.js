@@ -1,17 +1,27 @@
 import "./Projects.css";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Logos from "../logos/Logos.js";
 import Todoapp from "./images/todo_app.mp4";
 import Quotegenerator from "./images/quote_generator.mp4";
 import FoodOrderApp from "./images/foodorderapp.mp4";
 import MultiApiApp from "./images/multi_api_app.mp4";
 
-function Projects() {
+function Projects({setcomponentpath, componentpath})
+{
+
+    const location = useLocation();
+    useEffect(() => {
+        setcomponentpath(location.pathname);
+    }, [setcomponentpath, location.pathname])
+
+
   function disableRightClick(e) {
     e.preventDefault();
   }
   return (
     <div className="projects">
-      <h1 className="text-[#fffffe] text-4xl tracking-[5px] uppercase">Projects</h1> 
+      <h1>Projects</h1> 
       <div className="project-container">
         <div className="flex flex-col w-[350px] bg-[#fffffe] h-auto items-center m-4 border-none rounded-tr-2xl rounded-bl-2xl shadow">
           <video

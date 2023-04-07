@@ -1,6 +1,14 @@
 import "./Home.css";
+import { useLocation } from "react-router-dom";
 import Logos from "../logos/Logos";
-function Home() {
+import { useEffect } from "react";
+
+function Home({setcomponentpath, componentpath}) {
+    const location = useLocation();
+    useEffect(() => {
+        setcomponentpath(location.pathname);
+    }, [setcomponentpath, location.pathname])
+    
 
     return(
         <div className="home">
@@ -11,12 +19,12 @@ function Home() {
                 <h3>Hi, my name is..</h3>
                 <h1 className="home-name">Talluri Sainath</h1>
                 <p className="home-role"><i className="fa-solid fa-less-than"></i>Web Developer<i className="fa-solid fa-greater-than"></i></p>
+             
                 <div className="contact-links">
-                   
-                    <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://github.com/sainath123112" target="__blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i className="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i className="fa-solid fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i className="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://github.com/sainath123112" target="__blank"><i className="fa-brands fa-github"></i></a>
                     <span></span>
                 </div>
             </div>
