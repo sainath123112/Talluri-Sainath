@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import Logos from "../logos/Logos";
 import { useEffect } from "react";
 import ContactLinks from "../contact-links/ContactLinks";
+import { motion } from "framer-motion"
 
 function Home({setcomponentpath, componentpath}) {
     const location = useLocation();
@@ -12,7 +13,7 @@ function Home({setcomponentpath, componentpath}) {
     
 
     return(
-        <div className="home">
+        <motion.div animate={{scale: 1}} initial={{scale: 0}} className="home">
             <div className="home-logo">
             <i className="fa-sharp fa-solid fa-code-branch"></i>
             </div>
@@ -24,7 +25,7 @@ function Home({setcomponentpath, componentpath}) {
                 <ContactLinks></ContactLinks>
             </div>
             <Logos color="#a7a9be"></Logos>
-        </div>
+        </motion.div>
     );
 
 }

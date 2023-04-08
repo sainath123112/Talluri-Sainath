@@ -1,6 +1,7 @@
 import "./Skills.css";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 import Logos from "../logos/Logos";
 import ContactLinks from "../contact-links/ContactLinks";
 
@@ -13,7 +14,7 @@ function Skills({setcomponentpath, componentpath})
         setcomponentpath(location.pathname);
     }, [setcomponentpath, location.pathname])
     return( 
-        <div className="skills"> 
+        <motion.div animate={{x:0}} initial={{x: -1600}} className="skills"> 
         <h1>Skills</h1>
         <p>Let me introduce my skills in which I am good at.</p>
         <div className="skill-container">
@@ -26,7 +27,7 @@ function Skills({setcomponentpath, componentpath})
                         <p>JAVA</p>
                         <p>PYTHON</p>
                     </div>
-                </div>
+                </div> 
 
                 <div className="skill-row-child skill-frontend">
                     <h2><i className="fa-solid fa-code"></i>Frontend Languages</h2>
@@ -97,7 +98,7 @@ function Skills({setcomponentpath, componentpath})
         </div>
         <ContactLinks></ContactLinks>
         <Logos color="#f25f4c"></Logos>
-        </div>
+        </motion.div>
         
     );
 }

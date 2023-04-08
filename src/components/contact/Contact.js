@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Logos from "../logos/Logos.js";
 import ContactLinks from "../contact-links/ContactLinks";
+import {motion} from "framer-motion"
 
 function Contact({setcomponentpath})
 {
@@ -16,7 +17,7 @@ function Contact({setcomponentpath})
     }, [setcomponentpath, location.pathname])
 
     return( 
-        <div className="contact"> 
+        <motion.div animate={{x:0}} initial={{x: 1600}} className="contact"> 
             <h1>Contact</h1>
             <p>Send me an E-mail to hire..!</p>
             <div className="contact-form">
@@ -33,7 +34,7 @@ function Contact({setcomponentpath})
 
             <ContactLinks></ContactLinks>
             <Logos color="#e53170"></Logos>
-        </div>
+        </motion.div>
     );
 }
 

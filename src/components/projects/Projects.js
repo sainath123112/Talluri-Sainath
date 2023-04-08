@@ -7,6 +7,7 @@ import Quotegenerator from "./images/quote_generator.mp4";
 import FoodOrderApp from "./images/foodorderapp.mp4";
 import MultiApiApp from "./images/multi_api_app.mp4";
 import ContactLinks from "../contact-links/ContactLinks";
+import {motion} from "framer-motion"
 
 function Projects({setcomponentpath, componentpath})
 {
@@ -21,7 +22,7 @@ function Projects({setcomponentpath, componentpath})
     e.preventDefault();
   }
   return (
-    <div className="projects">
+    <motion.div animate={{x:0}} initial={{x: 1600}} className="projects">
       <h1>Projects</h1> 
       <div className="project-container">
         <div className="flex flex-col w-[350px] bg-[#fffffe] h-auto items-center m-4 border-none rounded-tr-2xl rounded-bl-2xl shadow">
@@ -119,16 +120,14 @@ function Projects({setcomponentpath, componentpath})
       <a href="https://github.com/sainath123112/Multiple-Api-App" className="font-bold" target="__blank">Source Code</a>
     </div>
         </div>
-        <div className="project-item"></div>
-        <div className="project-item"></div>
-        <div className="project-item"></div>
-        <div className="project-item"></div>
-        <div className="project-item"></div>
+        
+
+        
       </div>
 
       <ContactLinks></ContactLinks>
       <Logos color="#ff8906"></Logos>
-    </div>
+    </motion.div>
   );
 }
 

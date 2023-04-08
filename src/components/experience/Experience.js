@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Logos from "../logos/Logos";
 import ContactLinks from "../contact-links/ContactLinks";
+import {motion} from "framer-motion"
 
 function Experience({setcomponentpath})
 {
@@ -13,7 +14,7 @@ function Experience({setcomponentpath})
     }, [setcomponentpath, location.pathname])
 
     return( 
-        <div className="experience"> 
+        <motion.div animate={{x:0}} initial={{x: -1600}} className="experience"> 
             <h1>Experience</h1>
             <div className="experience-stem"></div>
             <div className="experience-dot-one">
@@ -47,7 +48,7 @@ function Experience({setcomponentpath})
 
             <ContactLinks></ContactLinks>
             <Logos color="#f25f4c"></Logos>
-        </div>
+        </motion.div>
     );
 }
 
