@@ -22,10 +22,10 @@ function Projects({setcomponentpath, componentpath})
     e.preventDefault();
   }
   return (
-    <motion.div animate={{x:0}} initial={{x: 1600}} className="projects">
-      <h1>Projects</h1> 
+    <div className="projects">
+      <motion.h1 animate={{scale:1}} initial={{scale: 0}}>Projects</motion.h1> 
       <div className="project-container">
-        <div className="flex flex-col w-[350px] bg-[#fffffe] h-auto items-center m-4 border-none rounded-tr-2xl rounded-bl-2xl shadow">
+        <motion.div animate={{x:0}} initial={{x: 1600}} className="flex flex-col w-[350px] bg-[#fffffe] h-auto items-center m-4 border-none rounded-tr-2xl rounded-bl-2xl shadow">
           <video
             width="100%"
             autoPlay
@@ -44,11 +44,11 @@ function Projects({setcomponentpath, componentpath})
             <li>REACT</li>
           </ul>  
           <div className="project-item-buttons pb-3 pt-2">
-      <a href="https://sainath123112.github.io/todo-app/" className="font-bold" target="__blank">Live Demo</a>
-      <a href="https://github.com/sainath123112/todo-app" className="font-bold" target="__blank">Source Code</a>
-    </div>
+            <a href="https://sainath123112.github.io/todo-app/" className="font-bold" target="__blank">Live Demo</a>
+            <a href="https://github.com/sainath123112/todo-app" className="font-bold" target="__blank">Source Code</a>
         </div>
-        <div className="flex flex-col w-[350px] bg-[#fffffe] h-auto items-center m-4 border-none rounded-tr-2xl rounded-bl-2xl shadow">
+      </motion.div>
+        <motion.div animate={{scale:1}} initial={{scale: 0}} className="flex flex-col w-[350px] bg-[#fffffe] h-auto items-center m-4 border-none rounded-tr-2xl rounded-bl-2xl shadow">
           <video
             width="100%"
             autoPlay
@@ -71,8 +71,8 @@ function Projects({setcomponentpath, componentpath})
       <a href="https://sainath123112.github.io/random-quote-generator/" className="font-bold" target="__blank">Live Demo</a>
       <a href="https://github.com/sainath123112/random-quote-generator" className="font-bold" target="__blank">Source Code</a>
     </div>
-        </div>
-        <div className="flex flex-col w-[350px] bg-[#fffffe] h-auto items-center m-4 border-none rounded-tr-2xl rounded-bl-2xl shadow">
+        </motion.div>
+        <motion.div animate={{x:0}} initial={{x: -1600}} className="flex flex-col w-[350px] bg-[#fffffe] h-auto items-center m-4 border-none rounded-tr-2xl rounded-bl-2xl shadow">
           <video
             width="100%"
             autoPlay
@@ -94,9 +94,9 @@ function Projects({setcomponentpath, componentpath})
       <a href="https://sainath123112.github.io/food-order-app/" className="font-bold" target="__blank">Live Demo</a>
       <a href="https://github.com/sainath123112/food-order-app" className="font-bold" target="__blank">Source Code</a>
     </div>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col w-[350px] bg-[#fffffe] h-auto items-center m-4 border-none rounded-tr-2xl rounded-bl-2xl shadow">
+        <motion.div animate={{scale:1}} initial={{scale: 0}} className="flex flex-col w-[350px] bg-[#fffffe] h-auto items-center m-4 border-none rounded-tr-2xl rounded-bl-2xl shadow">
           <video
             width="100%"
             autoPlay
@@ -119,7 +119,7 @@ function Projects({setcomponentpath, componentpath})
       <a href="https://sainath123112.github.io/Multiple-Api-App/" className="font-bold" target="__blank">Live Demo</a>
       <a href="https://github.com/sainath123112/Multiple-Api-App" className="font-bold" target="__blank">Source Code</a>
     </div>
-        </div>
+        </motion.div>
         
 
         
@@ -127,7 +127,7 @@ function Projects({setcomponentpath, componentpath})
 
       <ContactLinks></ContactLinks>
       <Logos color="#ff8906"></Logos>
-    </motion.div>
+    </div>
   );
 }
 

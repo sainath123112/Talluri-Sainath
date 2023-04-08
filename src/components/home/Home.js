@@ -20,7 +20,18 @@ function Home({setcomponentpath, componentpath}) {
             <div className="home-heading">
                 <h3>Hi, my name is..</h3>
                 <h1 className="home-name">Talluri Sainath</h1>
-                <p className="home-role"><i className="fa-solid fa-less-than"></i>Web Developer<i className="fa-solid fa-greater-than"></i></p>
+                <div className="home-role">
+                    <i className="fa-solid fa-less-than"></i>
+                    <motion.div  className="home-quali">
+                    <motion.div  className="home-quali-sub">
+                        <motion.p>Web Developer</motion.p>
+                        <motion.p>UI/UX Designer</motion.p>
+                        <motion.p>React Developer</motion.p>
+                        <motion.p>Java Developer</motion.p>
+                        </motion.div>
+                    </motion.div>
+                    <i className="fa-solid fa-greater-than"></i>
+                </div>
              
                 <ContactLinks></ContactLinks>
             </div>
