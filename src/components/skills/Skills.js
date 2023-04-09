@@ -16,7 +16,7 @@ function Skills({setcomponentpath, componentpath})
     return( 
         <div className="skills"> 
         <motion.h1 animate={{y:0}} initial={{y: -500}}>Skills</motion.h1>
-        <motion.p animate={{scale:1}} initial={{scale: 0}}>Let me introduce my skills in which I am good at.</motion.p>
+        <motion.p animate={{scale:1}} initial={{scale: 0}} className="skills-p">Let me introduce my skills in which I am good at.</motion.p>
         <div animate={{x:0}} initial={{x: -1600}} className="skill-container">
             <div className="skill-row">
                 <motion.div animate={{x:0}} initial={{x: -1600}} className="skill-row-child skill-program">

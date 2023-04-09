@@ -8,16 +8,19 @@ import Experience from "./components/experience/Experience";
 import Contact from "./components/contact/Contact.js";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from "react";
+import MobileNav from './components/mobile-nav/MobileNav';
 
 
 function App() {
 
 const [componentpath, setcomponentpath] = useState("");
+const [mobilenavclicked, setmobilenavclicked] = useState(false);
   return (
     <div className="App">
 
       <BrowserRouter>
-      <Navbar componentpath={componentpath} setcomponentpath={setcomponentpath}></Navbar>
+      <Navbar componentpath={componentpath} mobilenavclicked={mobilenavclicked} setmobilenavclicked={setmobilenavclicked} setcomponentpath={setcomponentpath}></Navbar>
+      {mobilenavclicked && <MobileNav componentpath={componentpath} setcomponentpath={setcomponentpath} mobilenavclicked={mobilenavclicked} setmobilenavclicked={setmobilenavclicked} ></MobileNav>}
       <Routes>
         <Route path="/Talluri-Sainath/" element={<Home componentpath={componentpath} setcomponentpath={setcomponentpath}></Home>}></Route>
         <Route path="/Talluri-Sainath/skills" element={<Skills componentpath={componentpath} setcomponentpath={setcomponentpath}></Skills>}></Route>

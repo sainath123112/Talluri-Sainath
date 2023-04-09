@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logoTs from "./images/logo-no-background.png"
 import SainathResume from "./resume/SainathResume.pdf";
 
-function Navbar({ componentpath }) {
+function Navbar({ componentpath, setmobilenavclicked }) {
 
 
     return(
@@ -18,6 +18,17 @@ function Navbar({ componentpath }) {
             </div>
             <div className="navbar-resume">
                 <a href={SainathResume} target="__blank"><i className="fa-solid fa-download"></i>Resume</a>
+            </div>
+            <div className="navbar-lines" onClick={()=> setmobilenavclicked(true)}>
+                <div className="navbar-line-1">
+
+                </div>
+                <div className="navbar-line-2">
+                    
+                </div>
+                <div className="navbar-line-3">
+                    
+                </div>
             </div>
         </div>
     );

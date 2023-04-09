@@ -1,5 +1,5 @@
 import "./Home.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import Logos from "../logos/Logos";
 import { useEffect } from "react";
 import ContactLinks from "../contact-links/ContactLinks";
@@ -32,7 +32,13 @@ function Home({setcomponentpath, componentpath}) {
                     </motion.div>
                     <i className="fa-solid fa-greater-than"></i>
                 </div>
-             
+                <div className="home-contact-links">
+                    <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i className="fa-brands fa-linkedin-in"></i></a>
+                    <Link to="/Talluri-Sainath/contact"><i className="fa-solid fa-envelope"></i></Link>
+                    <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i className="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://github.com/sainath123112" target="__blank"><i className="fa-brands fa-github"></i></a>
+                    <span></span>
+                </div>
                 <ContactLinks></ContactLinks>
             </div>
             <Logos color="#a7a9be"></Logos>

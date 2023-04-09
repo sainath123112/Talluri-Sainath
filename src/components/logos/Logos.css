@@ -54,4 +54,23 @@
     
 }
 
+@media (max-width: 414px)
+{
+    .html-logo 
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .js-logo 
+    {
+        display: none;
+    }
+    .html-logo 
+    {
+        display: block;
+    }
+}
 
