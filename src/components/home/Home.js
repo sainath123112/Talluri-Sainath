@@ -37,7 +37,6 @@ function Home({setcomponentpath, componentpath}) {
                     <Link to="/Talluri-Sainath/contact"><i className="fa-solid fa-envelope"></i></Link>
                     <a href="https://linkedin.com/in/sainath-talluri" target="__blank"><i className="fa-brands fa-square-facebook"></i></a>
                     <a href="https://github.com/sainath123112" target="__blank"><i className="fa-brands fa-github"></i></a>
-                    <span></span>
                 </div>
                 <ContactLinks></ContactLinks>
             </div>

@@ -115,6 +115,7 @@
 {
     cursor: pointer;
     transition: all 0.25s linear;
+    display: none;
 }
 .navbar-lines div
 {
@@ -141,7 +142,7 @@
 }
 
 
-@media (min-width: 320px)
+@media (max-width: 414px)
 {
     .navbar
     {
@@ -158,23 +159,25 @@
         width: 50px;
         height: 50px;
     }
-}
-@media (min-width: 768px)
-{
-    .navbar
+    .navbar-lines
     {
-        padding: 10px 60px;
+        display: block;
+    }
+    .navbar-lines div
+    {
+        width: 40px;
     }
 }
-@media (min-width: 1024px)
+@media (max-width: 1100px)
 {
     .navbar
     {
-        padding: 10px ;
+        padding: 10px 30px;
+        justify-content: space-between;
     }
     .navbar-links, .navbar-resume
     {
-        display: block;
+        display: none;
     }
     .navbar img
     {
@@ -184,6 +187,6 @@
     }
     .navbar-lines
     {
-        display: none;
+        display: block;
     }
 }

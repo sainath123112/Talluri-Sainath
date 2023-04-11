@@ -48,6 +48,7 @@
     color: #a7a9be;
     letter-spacing:2px;
     align-items: center;
+    justify-content: center;
 }
 .home-role i
 {
@@ -111,7 +112,66 @@
 }
 
 
-@media (min-width: 320px)
+@media (max-width: 1100px)
+{
+    .home-logo i
+    {
+        display: block;
+        font-size: 170px;
+    }
+    .home-quali-sub p
+{
+   font-size: 32px;
+   transform: translateY(-5px);
+}
+.home-role i
+{
+    padding: 0 5px;
+    font-size: 32px;
+}
+.home-name
+{
+    font-size: 52px;
+}
+.home-heading h3
+{
+    margin: auto;
+    font-size: 24px;
+}
+.home-contact-links
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.home-contact-links a
+{
+    text-decoration: none;
+    color: #a7a9be;
+    padding: 15px 10px;
+    font-size: 1.8em;
+    transform: scale(1);
+    transition: all 0.25s linear;
+    margin: 0 20px;
+}
+
+.home-contact-links a i
+{
+    transition: all 0.25s linear;
+}
+.home-contact-links a:hover i
+{
+    transform: scale(1.2);
+    
+}
+
+.home
+{
+    padding: 10px;
+}
+}
+
+@media (max-width: 414px)
 {
     .home-logo i
     {
@@ -149,7 +209,7 @@
 }
 .home-contact-links
 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .home-contact-links a
 {
@@ -166,67 +226,4 @@
 }
 }
 
-@media (min-width: 768px)
-{
-    .home-logo i
-    {
-        display: block;
-        font-size: 150px;
-    }
-    .home-quali-sub p
-{
-   font-size: 32px;
-   transform: translateY(-5px);
-}
-.home-role i
-{
-    padding: 0 5px;
-    font-size: 32px;
-}
-.home-name
-{
-    font-size: 52px;
-}
-.home-heading h3
-{
-    margin: auto;
-    font-size: 24px;
-}
-.home-contact-links
-{
-    margin-top: 20px;
-}
-.home-contact-links a
-{
-    text-decoration: none;
-    color: #a7a9be;
-    padding: 15px 10px;
-    font-size: 1.5em;
-    transform: scale(1);
-    transition: all 0.25s linear;
-    margin: 0 10px;
-}
 
-.home-contact-links a i
-{
-    transition: all 0.25s linear;
-}
-.home-contact-links a:hover i
-{
-    transform: scale(1.2);
-    
-}
-
-.home
-{
-    padding: 10px;
-}
-}
-
-@media (min-width: 1024px)
-{
-    .home-contact-links
-    {
-        display: none;
-    }
-}

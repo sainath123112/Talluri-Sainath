@@ -77,3 +77,28 @@
   opacity: 0.7;
   cursor: pointer;
 }
+
+@media (max-width: 414px)
+{
+  .projects h1 
+  {
+    font-size: 32px;
+  }
+
+  .project-container
+  {
+    padding: 0 30px;
+  }
+  .project-container div
+  {
+    width: 300px;
+    margin: 10px;
+  }
+  .project-container div h2
+  {
+    padding: 0 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
