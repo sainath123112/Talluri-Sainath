@@ -6,7 +6,7 @@ import Skills from "./components/skills/Skills.js";
 import Projects from "./components/projects/Projects.js";
 import Experience from "./components/experience/Experience";
 import Contact from "./components/contact/Contact.js";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { useState } from "react";
 import MobileNav from './components/mobile-nav/MobileNav';
 
@@ -18,7 +18,7 @@ const [mobilenavclicked, setmobilenavclicked] = useState(false);
   return (
     <div className="App">
 
-      <BrowserRouter>
+      <HashRouter>
       <Navbar componentpath={componentpath} mobilenavclicked={mobilenavclicked} setmobilenavclicked={setmobilenavclicked} setcomponentpath={setcomponentpath}></Navbar>
       {mobilenavclicked && <MobileNav componentpath={componentpath} setcomponentpath={setcomponentpath} mobilenavclicked={mobilenavclicked} setmobilenavclicked={setmobilenavclicked} ></MobileNav>}
       <Routes>
@@ -29,7 +29,7 @@ const [mobilenavclicked, setmobilenavclicked] = useState(false);
         <Route path="/Talluri-Sainath/contact" element={<Contact componentpath={componentpath} setcomponentpath={setcomponentpath}></Contact>}></Route>
         <Route path="*" element={<h2>Page Not Found</h2>}></Route>
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
       
     </div>
   );
