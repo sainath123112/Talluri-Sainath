@@ -6,8 +6,7 @@
     justify-content: center;
     background-color: #fffffe;
     padding-top: 100px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
 .experience h1 
@@ -174,7 +173,6 @@
     margin-top: 10px;
     z-index: 1;
     text-align: justify;
-    overflow: scroll;
 
 }
 .experience-2::after
