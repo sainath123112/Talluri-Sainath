@@ -6,7 +6,7 @@
     padding: 6em;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: #0f0e17;
     
 }
