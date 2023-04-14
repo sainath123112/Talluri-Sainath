@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Talluri-Sainath/static/css/main.f4642af0.css",
-    "main.js": "/Talluri-Sainath/static/js/main.f151ac45.js",
+    "main.css": "/Talluri-Sainath/static/css/main.5b798a51.css",
+    "main.js": "/Talluri-Sainath/static/js/main.6e1e8120.js",
     "static/media/foodorderapp.mp4": "/Talluri-Sainath/static/media/foodorderapp.95c98afc5a49e85461e5.mp4",
     "static/media/todo_app.mp4": "/Talluri-Sainath/static/media/todo_app.dd93ca0845f81e327ce4.mp4",
     "static/media/SainathResume.pdf": "/Talluri-Sainath/static/media/SainathResume.b5ca1c178f2271e78e6b.pdf",
@@ -9,11 +9,11 @@
     "static/media/quote_generator.mp4": "/Talluri-Sainath/static/media/quote_generator.710ed36956cfedeaa065.mp4",
     "static/media/logo-no-background.png": "/Talluri-Sainath/static/media/logo-no-background.5aac98215f7b726c8fa7.png",
     "index.html": "/Talluri-Sainath/index.html",
-    "main.f4642af0.css.map": "/Talluri-Sainath/static/css/main.f4642af0.css.map",
-    "main.f151ac45.js.map": "/Talluri-Sainath/static/js/main.f151ac45.js.map"
+    "main.5b798a51.css.map": "/Talluri-Sainath/static/css/main.5b798a51.css.map",
+    "main.6e1e8120.js.map": "/Talluri-Sainath/static/js/main.6e1e8120.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4642af0.css",
-    "static/js/main.f151ac45.js"
+    "static/css/main.5b798a51.css",
+    "static/js/main.6e1e8120.js"
   ]
 }
