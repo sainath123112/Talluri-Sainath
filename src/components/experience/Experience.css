@@ -3,7 +3,9 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     background-color: #fffffe;
     padding-top: 100px;
     overflow: hidden;
@@ -23,8 +25,11 @@
     height: 70vh;
     background-color: #0f0e17;
     z-index: 1;
-    position: fixed;
-    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
     border-radius: 10px 10px 0 0;
 }
 
@@ -37,8 +42,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 51%;
+    position: absolute;
+    top: 150px;
     z-index: 1;
 }
 .experience-dot-two
@@ -50,8 +55,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 71%;
+    position: absolute;
+    top: 300px;
     z-index: 1;
 }
 
@@ -70,9 +75,9 @@
     height: 320px;
     background-color: #0f0e17;
     z-index: 1;
-    position: fixed;
-    top: 29%;
-    left: 13%;
+    position: absolute;
+    top: -5px;
+    right: 75px;
     border-radius: 10px;
     padding: 20px;
 }
@@ -151,9 +156,9 @@
     height: 320px;
     background-color: #0f0e17;
     z-index: 1;
-    position: fixed;
-    top: 49%;
-    right: 13%;
+    position: absolute;
+    top: 145px;
+    left: 75px;
     border-radius: 10px;
     padding: 20px;
 }
@@ -203,9 +208,14 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 50px;
+        overflow-y: scroll;
 
     }
-    .experience-stem, .experience-dot-one, .experience-dot-two
+    .experience-stem{
+        background-color: transparent;
+        height: 800px;
+    }
+    .experience-dot-one, .experience-dot-two
     {
         display: none;
     }   
@@ -213,7 +223,8 @@
     {
         width: 250px;
         margin-top: 30px;
-        position: static;
+        top: 0;
+        right: -120px;
         height: auto;
     }
     .experience-1::after
@@ -226,10 +237,11 @@
     }
     .experience-2
     {
-        position: static;
         width: 250px;
         margin-top: 30px;
         height: auto;
+        left: -125px;
+        top: 400px;
     }
     .experience-2::after
     {
@@ -256,20 +268,26 @@
 
 @media (min-width: 420px) and (max-width: 1100px)
 {
-    .experience-stem, .experience-dot-one, .experience-dot-two
+
+    .experience-stem
+    {
+        background-color: transparent;
+
+    }
+    .experience-dot-one, .experience-dot-two
     {
         display: none;
     }  
     .experience-1
     {
-        top: 20%;
+        top: -10%;
         left: 50%;
         transform: translateX(-50%);
 
     }
     .experience-2
     {
-        top: 60%;
+        top: 40%;
         left: 50%;
         transform: translateX(-50%);
     } 

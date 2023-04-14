@@ -16,13 +16,7 @@ function Experience({setcomponentpath})
     return( 
         <motion.div animate={{x:0}} initial={{x: -1600}} className="experience"> 
             <h1>Experience</h1>
-            <div className="experience-stem"></div>
-            <div className="experience-dot-one">
-                <div className="experience-dot-small"></div>
-            </div>
-            <div className="experience-dot-two">
-                <div className="experience-dot-small"></div>
-            </div>
+            <div className="experience-stem">
             <div className="experience-1">
                 <h2 className="experience-1-head">Teaching Assistant</h2>
                 <p className="experience-1-company"><em>Southern Illinois University Edwardsville</em></p>
@@ -45,6 +39,16 @@ function Experience({setcomponentpath})
                             libraries like Redux and react hooks.</li>
                 </ul>
             </div>
+            <div className="experience-dot-one">
+                <div className="experience-dot-small"></div>
+            </div>
+            <div className="experience-dot-two">
+                <div className="experience-dot-small"></div>
+            </div>
+
+            </div>
+           
+            
 
             <ContactLinks></ContactLinks>
             <Logos color="#f25f4c"></Logos>
