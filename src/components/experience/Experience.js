@@ -29,7 +29,7 @@ function Experience({setcomponentpath})
                 </ul>
             </div>
             <div className="experience-2">
-            <h2 className="experience-1-head">Full Stack Developer Intern</h2>
+            <h2 className="experience-1-head">Full Stack Developer</h2>
                 <p className="experience-1-company"><em>Ayagan IT Services</em></p>
                 <p className="experience-1-location" ><em> Dublin, Ireland</em></p>
                 <p className="experience-1-time"><em>Apr 2020 – Mar 2021</em></p>
@@ -39,13 +39,26 @@ function Experience({setcomponentpath})
                             libraries like Redux and react hooks.</li>
                 </ul>
             </div>
+            <div className="experience-3">
+            <h2 className="experience-1-head">Software Developer</h2>
+                <p className="experience-1-company"><em>Srisys Inc.</em></p>
+                <p className="experience-1-location" ><em> Hyderabad, India</em></p>
+                <p className="experience-1-time"><em>Mar 2019 – Feb 2020</em></p>
+                <ul>
+                    <li>I worked on a project which delas with financial services. </li>
+                        <li>The main aim of the project is to design, develop and configure components and solutions for the new requirements or existing system enhancements.</li>
+                        <li>Implemented using React libraries like Redux and react hooks.</li>
+                </ul>
+            </div>
             <div className="experience-dot-one">
                 <div className="experience-dot-small"></div>
             </div>
             <div className="experience-dot-two">
                 <div className="experience-dot-small"></div>
             </div>
-
+            <div className="experience-dot-three">
+                <div className="experience-dot-small"></div>
+            </div>
             </div>
            
             

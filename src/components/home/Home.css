@@ -81,7 +81,10 @@
 {
     transform: translateY(-10px);
 }
-
+.home-contact-links 
+{
+    opacity: 0;
+}
 @keyframes qualisub
 {
     0% {
@@ -141,6 +144,7 @@
 .home-contact-links
 {
     margin-top: 20px;
+    opacity: 1;
     display: flex;
     justify-content: center;
 }

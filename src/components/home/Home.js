@@ -25,7 +25,7 @@ function Home({setcomponentpath, componentpath}) {
                     <motion.div  className="home-quali">
                     <motion.div  className="home-quali-sub">
                         <motion.p>Web Developer</motion.p>
-                        <motion.p>UI/UX Designer</motion.p>
+                        <motion.p>Golang Developer</motion.p>
                         <motion.p>React Developer</motion.p>
                         <motion.p>Java Developer</motion.p>
                         </motion.div>
